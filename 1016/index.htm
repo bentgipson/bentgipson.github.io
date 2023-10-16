@@ -4,40 +4,88 @@
     <title>MIS 3033 October 16,2023 JavaScript</title>
 
     <style>
-        #main
-        {
-            width:600px;
-            background-color:lightblue;
+        #main {
+            width: 600px;
+            background-color: lightblue;
         }
 
-        .divstyle
-        {
-            width:60px;
-            height:80px;
-            background-color:lightcyan;
-            border-style:solid;
-            border-width:1px;
-            border-color:black;
-            border-radius:10px;
+        .divstyle {
+            width: 60px;
+            height: 80px;
+            background-color: lightcyan;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            border-radius: 10px;
+        }
+
+        #updiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px
+        }
+
+        #downdiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div id="main">
-        <div id="div1" class="divstyle"></div>
+    <div id="webdiv">
+        <div id="headerdiv" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+            <div style="font-size:30px;color:dodgerblue;text-transform:uppercase;font-weight:bold;">
+                I love Programming!
+            </div>
+            <div>
+                <img src="a.svg" style="height:100px;"/>
+            </div>
+        </div>
+        <div id="bodydiv"
+            <div id="leftdiv">
+                <div id="updiv" style="width:480px;background-color:lightpink;"
+                     <span id="title1" style="font-size:20px;font-weight:bold;">
+                         What I already learned:
+                     </span>
 
-        <script>
-            {
-                "use strict";
-                document.querySelector("#div1").style.backgroundColor = "red";
-                document.querySelector("#div2").style.backgroundColor = "blue";
-            }
-        </script>
+                     <ul>
+                         <li>C#</li>
+                         <li>C# Entity Framework</li>
+                         <li>Database Sqlite</li>
+                         <li>HTML & CSS</li>
+                     </ul>
+                </div>
+                <div id="downdiv" style="width:480px;background-color:aquamarine;"
+                     <span id="title2" style="font-size:20px;font-weight:bold;">
+                         What I am going to learn next:
+                     </span>
+                     <ol>
+                         <li>JavaScript</li>
+                         <li>BootStrap</li>
+                         <li>ASP.NET MVC</li>
+                         <li>Web REST API</li>
+                     </ol>
+                </div>
+                <script>
+                    {
+                        "use strict";
+                        document.querySelector("#div1").style.backgroundColor = "red";
+                        document.querySelector("#div2").style.backgroundColor = "blue";
+                    }
+                </script>
 
-        <div id="div2" class="divstyle"></div>
-        <div id="div3" class="divstyle"></div>
-    </div>
+            </div>
 </body>
 
 </html>
